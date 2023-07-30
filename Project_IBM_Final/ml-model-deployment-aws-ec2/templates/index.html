@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Guard</title>
+</head>
+<body>
+
+    <h1>Loan Guard</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>Account Balance</label><br>
+        <input type="text" name="x1"><br><br>
+
+        <label>Duration of Credit (month)</label><br>
+        <input type="text" name="x2"><br><br>
+
+        <label>Payment Status of Previous Credit</label><br>
+        <input type="text" name="x3"><br><br>
+
+        <label>Purpose</label><br>
+        <input type="text" name="x4"><br><br>
+
+        <label>Credit Amount</label><br>
+        <input type="text" name="x5"><br><br>
+
+        <label>Value Savings/Stocks</label><br>
+        <input type="text" name="x6"><br><br>
+
+        <label>Length of current employment</label><br>
+        <input type="text" name="x7"><br><br>
+
+        <label>Sex & Marital Status</label><br>
+        <input type="text" name="x8"><br><br>
+
+        <label>Most valuable available asset</label><br>
+        <input type="text" name="x9"><br><br>
+
+         <label>Age (years)</label><br>
+        <input type="text" name="x10"><br><br>
+
+         <label>Concurrent Credits</label><br>
+        <input type="text" name="x11"><br><br>
+
+         <label>Type of apartment</label><br>
+        <input type="text" name="x12"><br><br>
+
+         <label>Foreign Worker</label><br>
+        <input type="text" name="x13"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
